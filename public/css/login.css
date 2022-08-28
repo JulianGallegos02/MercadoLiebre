@@ -4,31 +4,15 @@
     box-sizing: border-box;
 }
 
-.logo{
-    width: 200px;
-    margin: 20px;
-}
-
-.banner{
-    width: 100%;
-}
-
 body{
     font-family: 'Roboto';
     font-size: 12px;
     background-color: #ebebeb;
 }
 
-main{
-    width: 90%;
-    margin: 0 auto;
- }
-
-
-article{
-    margin: 10px;
-    padding: 15px;
-    background-color: white;
+.logo{
+    width: 200px;
+    margin: 20px;
 }
 
 .lupa{
@@ -101,26 +85,6 @@ article{
     font-size: 17px;
 }
 
-main section article i{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: relative;
-    right: -80%;
-    top: -15px;
-    transition: 500ms;
-    }
-
-main article i:hover{
-    rotate: -90deg;
-} 
-
-
 .burger-menu{
     background-color: #1259c3;
     display:block;
@@ -135,67 +99,68 @@ main article i:hover{
     display: block;
 }
 
-.imagenes{
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.titular{
-    font-size: 24px;
-    text-align: left;
-    color: #666;
-    font-weight: 500;
-    margin: 12px;
-
-}
-
-.productos{
+.login{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.iconos-precios{
-    border-top: solid 1px #ebebeb;
-    text-align: left;
-    color: #39b54a;
-    
+
+.fondo /* fondo de registro */ {
+    margin: 30px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
 }
 
-.precios{
-    display:flex;
+.usuario,.password,.botones{  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.botones{
     align-items: center;
-    margin: 15px;
+    padding: 2%;
+    display: block;
+    width: 100%;
+
 
 }
 
-.precio-total{
-    font-size: 18px;
-    width: 30%;
-}
-
-.descuento{
-    font-size: 16px;
-    color: #39b54a;
-    width: 70%;
-}
-
-.descripcion{
-    font-size: 16px;
-    color: #666;
-    text-align: left;
-    display: none;
-    padding-left: 4%;
-    opacity: 0%;
+.botonlogin{
+    background-color: #1259c3;
+    padding: 10px;
+    color: white;
+    font-size: bold;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
     transition: 300ms;
+
 }
 
+.botonlogin:hover{
+    background-color: #0022AA;
+}
+
+.titulos{
+    font-size: 15px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+input{
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
 
 footer{
     text-align: center;
     background-color: white;
-    
-    
+
 }
 
 .icono-footer{
@@ -218,14 +183,6 @@ footer{
 
 }
 
-.articulos:hover{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
-
-.articulos:hover .descripcion{
-    opacity: 100%;
-}
-
 @media (min-width: 361px){
     .logo{
         width: 50%;
@@ -240,20 +197,9 @@ footer{
 }
 
 @media (min-width: 769px){
-    .descripcion{
-        display: block;
-
-    }
     .main-navbar{
         display:block;
     }
-    .burger-menu{
-        display:none;
-    }
-    .articulos{
-        width: 45%;
-    }
-
     .logo,.barra,.copy-header{
         width: 30%;
     }
@@ -282,28 +228,17 @@ footer{
         width: 40%;
     }
 
+    .burger-menu{
+        display:none;
+    }
+
 }
 
 @media (min-width:1200px){
-    .articulos{
-        width: 23%;
-    }
 
     .columna-footer{
         display: flex;
         justify-content: space-evenly;
-    }
-
-    .precio-total{
-        font-size: 18px;
-        width: 30%;
-    }
-    
-    .descuento{
-        font-size: 16px;
-        color: #39b54a;
-        width: 70%;
-        margin-left: 20%;
     }
     
 }
