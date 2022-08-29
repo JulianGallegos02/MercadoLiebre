@@ -160,6 +160,9 @@ input{
 footer{
     text-align: center;
     background-color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
 
 }
 

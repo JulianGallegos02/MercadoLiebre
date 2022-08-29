@@ -118,6 +118,8 @@ body{
 
 }
 
+
+
 .titulos{
     font-size: 15px;
     margin-left: 5px;
@@ -138,6 +140,37 @@ input{
 
 .botones{
     align-items: center;
+    padding: 2%;
+    display: block;
+    width: 100%;
+
+
+}
+
+.botonBorrar{
+    background-color: brown;
+    padding: 10px;
+    color: white;
+    font-size: bold;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    transition: 300ms;
+    margin: 10px;
+
+}
+
+.botonEnviar{
+    background-color: #1259c3;
+    padding: 10px;
+    color: white;
+    font-size: bold;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    transition: 300ms;
+    margin: 10px;
+
 }
 
 
